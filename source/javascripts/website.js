@@ -18,6 +18,6 @@
   $(document).ready(function(){
     tracking.trackClicks(targets, properties);
 
-    $('#employers-form').employersForm();
+    $('.segment-form').on('submit', segmentForm.track);
   });
 })(jQuery, tracking);
