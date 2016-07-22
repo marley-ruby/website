@@ -1,5 +1,4 @@
 //= require all
-//= require employers_form
 
 (function($, tracking) {
   var targets = {
@@ -17,7 +16,5 @@
 
   $(document).ready(function(){
     tracking.trackClicks(targets, properties);
-
-    $('.segment-form').on('submit', segmentForm.track);
   });
 })(jQuery, tracking);
